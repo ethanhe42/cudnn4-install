@@ -1,5 +1,6 @@
 cudapath=/usr/local/cuda
-sudo rm $cudapath/lib64/libcudnn.so
-sudo ln -s lib64/libcudnn.so $cudapath/lib64/libcudnn.so
-sudo mv $cudapath/include/cudnn.h $cudapath/include/cudnn5.h
-sudo ln -s /include/cudnn.h $cuda/include/cudnn.h
+sudo cp lib64/libcudnn.so.4.0.7 $cudapath/lib64/libcudnn.so.4.0.7
+cd $cudapath/lib64
+sudo ln -s libcudnn.so.4.0.7 libcudnn.so.4
+sudo ln -s libcudnn.so.4 libcudnn.so
+ldconfig
