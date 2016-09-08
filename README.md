@@ -1,5 +1,5 @@
 # cudnn4 easy install
-Just run `sh install.sh` in this repo, then comment `/usr/local/cuda/include/host_config.h` line 115.
+Just run `sh install.sh` in this repo
 
 #### Official install guide  
 PREREQUISITES
